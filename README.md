@@ -1,10 +1,10 @@
 # datadog-sensors
 
-將lm-sensors的CPU溫度資料回報到datadog上
+將[lm-sensors](https://github.com/lm-sensors/lm-sensors)的CPU溫度資料回報到[datadog](https://www.datadoghq.com/)上
 
 ## 需求
 
-此外掛透過plumbum與linux shell互動，抓取溫度資料，所以需在datadog的python資料夾中安裝plumbum
+此外掛透過[plumbum](https://plumbum.readthedocs.io/en/latest/)與linux shell互動，抓取溫度資料，所以需在datadog的python資料夾中安裝plumbum
 
 ```
 /opt/datadog-agent/embedded/bin/pip install plumbum
