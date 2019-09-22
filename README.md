@@ -2,6 +2,10 @@
 
 將[lm-sensors](https://github.com/lm-sensors/lm-sensors)的CPU溫度資料回報到[datadog](https://www.datadoghq.com/)上
 
+## 原理
+
+使用python套件[plumbum](https://plumbum.readthedocs.io/en/latest/)與linux shell互動，讀取數據並交給datadog-agent，再回傳
+
 ## 需求
 
 此外掛透過[plumbum](https://plumbum.readthedocs.io/en/latest/)與linux shell互動，抓取溫度資料，所以需在datadog的python資料夾中安裝plumbum
@@ -42,3 +46,8 @@
 ## 演示
 
 ![demo](demo/demo.png)
+
+
+
+這樣的做法可以把很多東西傳到datadog，我也有做傳gpu資訊的[datadog-nvidiasmi](https://github.com/allmwh/datadog-nvidiasmi)，ups資料也有，之後慢慢放~~
+
