@@ -8,7 +8,11 @@
 
 ## 需求
 
-此外掛透過[plumbum](https://plumbum.readthedocs.io/en/latest/)與linux shell互動，抓取溫度資料，所以需在datadog的python資料夾中安裝plumbum
+* 須安裝[lm_sensors](https://wiki.archlinux.org/index.php/Lm_sensors)
+  ```
+  sudo yum install lm_sensors
+  ```
+* 透過[plumbum](https://plumbum.readthedocs.io/en/latest/)與linux shell互動，抓取溫度資料，所以需在datadog的python資料夾中安裝plumbum
 
 ```
 /opt/datadog-agent/embedded/bin/pip install plumbum
